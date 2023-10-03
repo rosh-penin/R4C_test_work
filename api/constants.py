@@ -1,0 +1,1 @@
+TIMEDELTA_DAYS: float = 7.0
