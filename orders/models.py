@@ -1,7 +1,6 @@
 from django.db import models
 
 from customers.models import Customer
-from robots.models import Robot
 
 
 class Order(models.Model):
@@ -11,7 +10,7 @@ class Order(models.Model):
         related_name='orders'
     )
     robot = models.OneToOneField(
-        Robot,
+        "robots.Robot",
         on_delete=models.CASCADE,
         related_name='order',
         null=True,
